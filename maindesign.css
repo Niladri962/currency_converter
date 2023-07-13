@@ -1,0 +1,65 @@
+body{
+    background-color: rgb(56, 56, 56);
+}
+.main{
+    width: 400px;
+    height: 300px;
+    background-color: rgb(133, 130, 130);
+    position: absolute;
+    left: 500px;
+    top: 200px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.x{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding-left: 50px;
+    position: absolute;
+    top: 100px;
+}
+.x1{
+    position: absolute;
+    top: 170px;
+    left: 175px;
+    background-color: black;
+    color: black;
+    width: 135px;
+    height: 20px;
+    background: transparent;
+    border-bottom-style:solid;
+    border-bottom-color: aqua;
+}
+.x2{
+    position: absolute;
+    top: 170px;
+    left: 45px;
+    color: white;
+    font-size: 18px;
+}
+.restart{
+    position: absolute;
+    top: 230px;
+    left: 150px;
+}
+.x3{
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+.x3:hover{
+    background-color: aqua;
+}
+/* Define the animation */
+@keyframes fullScreenAnimation {
+    0% { background-color: red; }
+    50% { background-color: blue; }
+    100% { background-color: green; }
+}
+
+/* Apply the animation to the body element */
+.main{
+    animation: fullScreenAnimation 5s linear infinite;
+}

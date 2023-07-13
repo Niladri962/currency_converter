@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="codedesign.css" rel="stylesheet">
+    <script>
+        function convert(){
+            var a=document.getElementById("z").value;
+            var b=document.getElementById("z1").value;
+            if(a.length==0 && b.length!=0 ){
+                document.getElementById("output").innerHTML="❌❌❌";
+            }
+            else{
+            var num=a*b;
+            var result=num.toFixed(2);
+            document.getElementById("output").innerHTML=result;
+            }
+        }
+        
+     </script>
+</head>  
+<body>
+    <div class="main">
+        <input type="text" id="z" class="t" placeholder="Enter Value">
+        <select class="x1" id="z1">
+            <option>Choose</option>
+            <option value="0.61" id="t1">Algerian Dinar DZD</option>
+            <option value="11.44" id="t2">Chinese Yuan CNY</option>
+            <option value="2.69" id="t3">Egyptian Pound EGP</option>
+            <option value="90.63" id="t4">Euro EUR</option>
+            <option value="4.33" id="t5">South African Rand</option>
+        </select>
+        <br>
+        <p id="out" class="out1"></p><br>
+        <p id="output" class="zz"></p>
+        <br><br>
+        <input type="button" value="OK" onclick="convert()" class="sub">
+
+    </div>
+</body>
+</html>
